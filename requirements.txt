@@ -1,0 +1,15 @@
+# Service
+Flask==3.0.3
+gunicorn==22.0.0
+python-dotenv==1.0.1
+
+# Optimization (HiGHS LP solver ships inside SciPy)
+numpy==1.26.4
+scipy==1.13.1
+
+# LLM providers — install the one you use; both are safe to keep
+openai==1.51.0
+anthropic==0.34.2
+
+# Local test harness only (tests/run_public_cases.py --url ...)
+requests==2.32.3
