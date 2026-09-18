@@ -111,6 +111,8 @@ def main():
         for p in problems[:6]:
             print(f"     replay: {p}")
 
+        time.sleep(3)   # pace requests to stay under Groq's tokens-per-minute limit
+
     n = len(pack["cases"])
     latencies.sort()
     p95 = latencies[max(0, int(len(latencies) * 0.95) - 1)]
